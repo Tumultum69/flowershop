@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floristé — Студия авторской флористики</title>
+    <!-- Подключаем шрифты -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- НАВИГАЦИЯ -->
+    <header>
+        <div class="container nav-container">
+            <a href="#home" class="logo">Floristé</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Заказать</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Эстетика в каждом лепестке</h1>
+            <p>Авторские букеты с доставкой по городу за 60 минут</p>
+            <a href="#catalog" class="btn">Смотреть коллекцию</a>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section id="catalog" class="container section-padding">
+        <h2 class="section-title">Наши бестселлеры</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://img.freepik.com/premium-photo/beautiful-fresh-bouquet-mixed-flowers-wooden-box-flower-shop-concept-flower-delivery-vertical-image_102556-462.jpg" alt="Букет 1">
+                </div>
+                <h3>Пудровый рассвет</h3>
+                <p class="price">3 800 ₽</p>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://png.pngtree.com/png-clipart/20241208/original/pngtree-elegant-bouquet-pink-and-peach-roses-delicate-white-daisies-green-leaves-png-image_17735489.png" alt="Букет 2">
+                </div>
+                <h3>Гортензия & Море</h3>
+                <p class="price">4 200 ₽</p>
+            </div>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://png.pngtree.com/png-vector/20250215/ourlarge/pngtree-romantic-bouquet-white-flowers-tied-with-ribbon-png-image_15482162.png" alt="Букет 3">
+                </div>
+                <h3>Белый шепот</h3>
+                <p class="price">2 900 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about" class="about-section">
+        <div class="container text-center">
+            <h2 class="section-title">Почему выбирают нас?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <span class="icon">✿</span>
+                    <p>Всегда свежие поставки из Голландии</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">✈</span>
+                    <p>Бережная доставка в аквапаке</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">♥</span>
+                    <p>Фото букета перед отправкой</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+    <section id="contact" class="container section-padding">
+        <div class="contact-box">
+            <div class="contact-info">
+                <h2>Оставить заявку</h2>
+                <p>Напишите нам, и наш флорист поможет собрать идеальный букет под ваш бюджет и повод.</p>
+                <div class="contact-details">
+                    <p><strong>Телефон:</strong> +7 (999) 000-00-00</p>
+                    <p><strong>Адрес:</strong> ул. Цветочная, 15</p>
+                </div>
+            </div>
+            <!-- Замените ВАШ_ID на ID из Formspree для работы формы -->
+            <form action="https://formspree.io" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Номер телефона" required>
+                <textarea name="message" placeholder="Ваши пожелания (какие цветы любите, повод)"></textarea>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Floristé Studio. С любовью к природе.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
