@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог — Floristé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-placeholder"></header>
+
+    <main class="container" style="padding-top: 40px;">
+        <h2 style="text-align: center; margin-bottom: 30px;">Наши коллекции</h2>
+        <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 30px;">
+            <button class="btn" onclick="renderCatalog('all')">Все</button>
+            <button class="btn" onclick="renderCatalog('boxes')">В коробках</button>
+            <button class="btn" onclick="renderCatalog('wedding')">Свадьба</button>
+        </div>
+        <div id="catalog-list" class="product-grid"></div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>renderCatalog('all');</script>
+</body>
+</html>

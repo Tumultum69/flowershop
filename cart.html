@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина — Floristé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-placeholder"></header>
+    <main class="container" style="padding-top: 40px;">
+        <h2>Ваш заказ</h2>
+        <div id="cart-list" style="margin-top: 20px;"></div>
+        <div id="cart-total" style="margin-top: 20px; text-align: right; display: none;">
+            <h3>Итого: <span id="total-sum">0</span> ₽</h3>
+            <button class="btn" style="margin-top: 15px;" onclick="checkout()">Оформить доставку</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>renderCartPage();</script>
+</body>
+</html>

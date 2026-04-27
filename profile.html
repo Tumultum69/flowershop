@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль — Floristé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-placeholder"></header>
+    <main class="container" style="padding-top: 40px;">
+        <div id="auth-ui" class="product-card" style="max-width: 400px; margin: 0 auto;">
+            <h2>Вход</h2>
+            <input type="email" id="email" placeholder="Email (admin@mail.ru для админки)">
+            <button class="btn" style="width: 100%;" onclick="login()">Войти</button>
+        </div>
+
+        <div id="admin-ui" style="display: none;">
+            <h2>Панель администратора</h2>
+            <div class="product-card" style="text-align: left; margin-top: 20px;">
+                <input type="text" id="new-name" placeholder="Название">
+                <input type="number" id="new-price" placeholder="Цена">
+                <select id="new-cat">
+                    <option value="all">Букет</option>
+                    <option value="boxes">В коробке</option>
+                    <option value="wedding">Свадебный</option>
+                </select>
+                <button class="btn" onclick="addNewProduct()">Добавить в каталог</button>
+            </div>
+            <button class="btn btn-del" onclick="logout()">Выйти</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>checkAuth();</script>
+</body>
+</html>
